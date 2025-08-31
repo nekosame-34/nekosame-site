@@ -1,0 +1,123 @@
+html, body, #root, .home, .not-home {
+  height: 100%;
+  margin: 0;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(58, 58, 58);
+  z-index: -1;
+}
+
+.link {
+  color: black;
+  cursor: pointer;
+}
+
+.container {
+  flex: 1;
+  margin-top: 12em;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    margin-top: 8em;
+  }
+}
+
+.container > * {
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.container > *:nth-child(1) { animation-delay: 0.4s; }
+.container > *:nth-child(2) { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: -5vh;
+  }
+
+  to {
+    opacity: 1;
+    transform: (0);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+}
+
+.content-card {
+  background-color: rgb(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  border-radius: 1em;
+  padding: 1em 2em 2em;
+  margin-bottom: 1.5em;
+}
+
+.tool-card {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 5px rgb(180, 180, 180);
+  border-radius: 1em;
+  padding: 0.5em 2em 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.tool-card-link {
+  all: unset;
+  cursor: pointer;
+}
+
+.profile h1, .tools h1 {
+  font-size: 28px;
+}
+
+.profile-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image img {
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .profile {
+    padding: 1.5em 4em 1.5em;
+  }
+}
+
+.link-ul {
+  padding: 0;
+  justify-content: center;
+  display: flex;
+}
+
+.link-li {
+  list-style: none;
+}
+
+.link-not-first {
+  margin-left: 1em;
+}
+
+.privacy-link {
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+}

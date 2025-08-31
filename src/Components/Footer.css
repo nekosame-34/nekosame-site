@@ -1,0 +1,32 @@
+footer {
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    background: linear-gradient(#353535, #60606000);
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    
+    display: flex;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text p {
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+.footer-link a {
+    color: rgb(240, 240, 240);
+}
