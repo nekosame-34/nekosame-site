@@ -79,7 +79,7 @@ function Home() {
         <div className='content-card tools'>
           <h1>ツール</h1>
           <p>色々加していく予定です</p>
-          <a href="https://github.com/nekosame-34/nekosame.site" className='tool-card-link'>
+          <a href="https://github.com/nekosame-34/nekosame-site" className='tool-card-link'>
             <div className='tool-card'>
               <h2>このページのソース</h2>
               <p>GitHubのリポジトリに飛びます</p>
