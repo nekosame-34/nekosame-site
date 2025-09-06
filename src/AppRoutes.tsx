@@ -4,8 +4,9 @@ import {
     Routes,
     type RouteObject,
 } from "react-router-dom";
-import Home from "./Home";
-import Privacy from "./Privacy";
+import Home from "./Pages/Home";
+import Privacy from "./Pages/Privacy";
+import Page404 from "./Pages/404";
 
 const routes: RouteObject[] = [
     {
@@ -15,6 +16,10 @@ const routes: RouteObject[] = [
     {
         path: "/privacy",
         element: <Privacy />
+    },
+    {
+        path: "*",
+        element: <Page404 />
     }
 ];
 

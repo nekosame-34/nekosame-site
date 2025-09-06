@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './Page.css';
-import FallingBackgroundImages from './Components/Background';
-import profile from "./img/profile.png";
-import logoBlack from "./img/logo/x.png";
-import githubLogo from "./img/logo/github.png";
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import FallingBackgroundImages from '../Components/Background';
+import profile from "../img/profile.png";
+import logoBlack from "../img/logo/x.png";
+import githubLogo from "../img/logo/github.png";
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 
 function Home() {
   // The flags which changes background's character to sayochi!
@@ -78,7 +78,7 @@ function Home() {
         </div>
         <div className='content-card tools'>
           <h1>ツール</h1>
-          <p>色々加していく予定です</p>
+          <p>色々追加していく予定です</p>
           <a href="https://github.com/nekosame-34/nekosame-site" className='tool-card-link'>
             <div className='tool-card'>
               <h2>このページのソース</h2>
